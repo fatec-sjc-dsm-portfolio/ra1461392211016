@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ryan Alves de Quadros - Sobre Mim</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para a animação de digitação */
+        .typing-animation {
+            display: inline-block;
+            border-right: 2px solid #D61C4E;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #D61C4E;
+            }
+        }
+
+        /* Estilo para os ícones de contato */
+        .contact-icons {
+            margin-top: 2em;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-icons a {
+            color: #CBDCEB;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .contact-icons a:hover {
+            color: #D61C4E; /* Cor de destaque ao passar o mouse */
+        }
+
+        /* Margem para os parágrafos */
+        .container p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+    </style>
 </head>
+
 <body>
-    Ryan Alves de Quadros
+
+    <div class="sidebar">
+        <h2>Ryan Alves</h2>
+        <a href="index.html">Sobre Mim</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="formacao_habilidades.html">Formação e Habilidades</a>
+    </div>
+
+    <div class="container">
+        <h1 class="section-title typing-animation">Sobre Mim</h1>
+        <p>Sou uma pessoa apaixonada por inovação e sempre em busca de aprimorar minhas habilidades técnicas e conhecimentos na área de tecnologia e data science. Comprometido com resultados e com uma forte ênfase na colaboração em equipe, procuro contribuir de forma significativa para o sucesso dos projetos em que estou envolvido. Possuo conhecimento voltado à ciência de dados, aplicado para resolver problemas complexos e gerar insights valiosos.</p>
+
+        <h2 class="section-title">Experiência Profissional</h2>
+        <p><strong>DBO 1 - HTI</strong><br>
+            Cargo: Database Operator (jun 2023 - fev 2024)<br>
+            Como parte das minhas responsabilidades, operei nos servidores de banco de dados utilizando MySQL, com o objetivo de otimizar o desempenho. Além disso, conduzi manutenções diárias nos servidores, garantindo sua estabilidade e confiabilidade operacional, enquanto fornecia relatórios para nossos clientes.</p>
+
+        <h2 class="section-title">Projetos Acadêmicos</h2>
+        <p><strong>Fatec Prof. Jessen Vidal</strong><br>
+            Possuo conhecimento sólido em Scrum e experiência como Product Owner em projetos acadêmicos. Tenho domínio em aplicações web e modelagem de bancos de dados, desenvolvendo APIs e aplicações web com as tecnologias mais relevantes do mercado. Sempre aderi aos princípios de UX e UI, garantindo uma experiência satisfatória aos usuários. Minha expertise inclui o desenvolvimento de software para raspagem e análise de dados, com destaque para projetos acadêmicos em Web Scraping e gestão de cobranças. Além disso, utilizei programação mobile e inteligência artificial em projetos acadêmicos, aplicando tecnologias e bibliotecas para resolver problemas complexos.
+        </p>
+
+        <!-- Seção de Contato -->
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/ryanalvesquadros/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/RyanAlvesQ" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.kaggle.com/ryanalvesq" target="_blank" title="Kaggle"><i class="fab fa-kaggle"></i></a>
+        </div>
+    </div>
+
+    <!-- Importando Font Awesome para os ícones -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

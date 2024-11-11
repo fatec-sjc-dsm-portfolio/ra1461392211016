@@ -1,0 +1,115 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F7FB; /* Cor de fundo suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container {
+    margin-left: 250px;
+    padding: 2em;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000; /* Vermelho destaque */
+    display: inline-block;
+    border-right: 2px solid #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end) infinite, blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #000000;
+    }
+}
+
+/* Margem para os parágrafos (diminuindo a margem inferior) */
+.container p {
+    margin-bottom: 0.5em; /* Diminui a margem inferior */
+    text-align: justify;
+}
+
+/* Footer */
+.footer {
+    background-color: #000; /* Footer em preto */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 250px);
+    left: 250px;
+}
+
+/* Barra Lateral */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #2D3E50; /* Azul escuro da barra lateral */
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.sidebar h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.sidebar a {
+    color: #CBDCEB;
+    padding: 1em;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: background 0.3s, padding-left 0.3s; /* Adiciona transição para recuo */
+    box-sizing: border-box;
+}
+
+.sidebar a:hover {
+    background-color: #000000; /* Cor de destaque vermelho */
+    color: #FFFFFF;
+    padding-left: 15px; /* Efeito de recuo na lateral ao passar o mouse */
+}
+
+.contact-info {
+    color: #CBDCEB;
+}
+
+/* Botão */
+.button {
+    background-color: #000000; /* Botão vermelho */
+    color: #FFFFFF;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
