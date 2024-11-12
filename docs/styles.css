@@ -16,7 +16,7 @@ body {
 .section-title {
     font-size: 24px;
     font-weight: bold;
-    color: #000000; /* Vermelho destaque */
+    color: #000000; /* Preto para o título */
     display: inline-block;
     border-right: 2px solid #000000;
     white-space: nowrap;
@@ -38,14 +38,32 @@ body {
         border-color: transparent;
     }
     50% {
-        border-color: #000000;
+        border-color: none;
     }
 }
+
+
 
 /* Margem para os parágrafos (diminuindo a margem inferior) */
 .container p {
     margin-bottom: 0.5em; /* Diminui a margem inferior */
     text-align: justify;
+    padding-right: 20px; /* Adiciona preenchimento à direita para alinhar os textos */
+    position: relative;
+}
+
+/* Delimitador de linha após cada linha de texto */
+.container p {
+    display: block;
+    word-wrap: break-word;
+}
+
+/* Adiciona um pseudo-elemento com uma linha no final de cada linha de texto */
+.container p span {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #D61C4E;
+    margin-top: 5px;
 }
 
 /* Footer */
@@ -94,7 +112,7 @@ body {
 }
 
 .sidebar a:hover {
-    background-color: #000000; /* Cor de destaque vermelho */
+    background-color: #000000; /* Cor de destaque */
     color: #FFFFFF;
     padding-left: 15px; /* Efeito de recuo na lateral ao passar o mouse */
 }
@@ -105,11 +123,40 @@ body {
 
 /* Botão */
 .button {
-    background-color: #000000; /* Botão vermelho */
+    background-color: #000000; /* Botão preto */
     color: #FFFFFF;
     padding: 0.5em 1em;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+/* Estilo da foto */
+.photo-container {
+    margin-top: 20px;
+}
+
+.photo {
+    width: 170px; /* Tamanho da foto */
+    height: 170px; /* Tamanho fixo */
+    border-radius: 50%; /* Para tornar a foto circular */
+    object-fit: cover; /* Para manter a proporção da imagem */
+}
+
+/* Estilo dos ícones das redes sociais */
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px; /* Tamanho dos ícones */
+    height: 40px; /* Tamanho fixo */
+    object-fit: contain; /* Para garantir que a imagem fique dentro do container */
+}
+
+.contact-icons a:hover .social-icon {
+    opacity: 0.8; /* Efeito simples ao passar o mouse */
 }
