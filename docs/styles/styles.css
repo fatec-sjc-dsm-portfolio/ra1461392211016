@@ -1,11 +1,12 @@
 /* Estilo global */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif; /* Usando Roboto como fonte principal */
     background-color: #F5F7FB; /* Cor de fundo suave */
     color: #333;
     margin: 0;
     padding: 0;
     display: flex;
+    line-height: 1.6; /* Melhorando a legibilidade do texto */
 }
 
 .container {
@@ -14,6 +15,7 @@ body {
 }
 
 .section-title {
+    font-family: 'Poppins', Arial, sans-serif; /* Fonte Poppins para os títulos */
     font-size: 24px;
     font-weight: bold;
     color: #000000; /* Preto para o título */
@@ -44,6 +46,7 @@ body {
 
 /* Margem para os parágrafos (diminuindo a margem inferior) */
 .container p {
+    font-family: 'Roboto', Arial, sans-serif; /* Roboto para o texto dos parágrafos */
     margin-bottom: 0.5em; /* Diminui a margem inferior */
     text-align: justify;
     padding-right: 20px; /* Adiciona preenchimento à direita para alinhar os textos */
@@ -74,6 +77,7 @@ body {
     bottom: 0;
     width: calc(100% - 250px);
     left: 250px;
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte consistente para o footer */
 }
 
 /* Barra Lateral */
@@ -96,6 +100,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 1em;
+    font-family: 'Poppins', sans-serif; /* Título da barra lateral com Poppins */
 }
 
 .sidebar a {
@@ -107,27 +112,13 @@ body {
     display: block;
     transition: background 0.3s, padding-left 0.3s; /* Adiciona transição para recuo */
     box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .sidebar a:hover {
     background-color: #000000; /* Cor de destaque */
     color: #FFFFFF;
     padding-left: 15px; /* Efeito de recuo na lateral ao passar o mouse */
-}
-
-.contact-info {
-    color: #CBDCEB;
-}
-
-/* Botão */
-.button {
-    background-color: #000000; /* Botão preto */
-    color: #FFFFFF;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
 }
 
 /* Estilo da foto */
@@ -230,3 +221,37 @@ body {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
 }
 
+/* Lista de contribuições */
+.contributions-list, .about-me-div {
+    max-width: 1000px; /* Definir um limite de largura */
+    margin: 0 auto; /* Centraliza a lista na página */
+    padding: 0 20px; /* Adiciona espaçamento interno */
+}
+
+
+
+/* Itens da lista */
+.contributions-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contributions-list li , .about-me-div{
+    font-family: 'Roboto', Arial, sans-serif; /* Roboto para as listas */
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+    border-bottom: 1px solid #ddd; /* Linha de separação entre os itens */
+    padding-bottom: 10px; /* Adiciona espaçamento entre o texto e a linha */
+}
+
+/* Espaçamento entre os itens */
+.contributions-list li:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+}
+
+/* Adiciona um limite de margem ao final */
+.contributions-list {
+    margin-bottom: 30px; /* Espaço após a lista */
+}
